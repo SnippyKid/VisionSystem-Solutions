@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Vision Systems & Solutions</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    
+    <!-- Barba JS -->
+    <script src="https://unpkg.com/@barba/core"></script>
+</head>
+<body data-barba="wrapper">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <div class="navbar-left">
+                <div class="navbar-logo">
+                    <div class="logo-text">Vision Systems <span>&</span> Solutions</div>
+                </div>
+            </div>
+            
+            <div class="navbar-right">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <button class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main data-barba="container" data-barba-namespace="services">
+        <!-- Services Introduction -->
+        <section class="services-intro">
+            <div class="container">
+                <h1 class="page-title">Our <span>Services</span></h1>
+                <p class="intro-text">At Vision Systems & Solutions, we provide comprehensive technical services designed to meet all your technology needs. Our team of experts delivers solutions ranging from security systems to computer services, ensuring your technology works perfectly for you.</p>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="services-section">
+            <div class="container">
+                <h2 class="section-title">What We <span>Offer</span></h2>
+                
+                <div class="services-grid">
+                    <!-- CCTV Installation -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="assets/img/cctv.gif" alt="CCTV Installation">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <h3 class="service-title">CCTV Installation</h3>
+                            <p class="service-description">Professional security camera systems for homes and businesses, providing 24/7 monitoring and peace of mind with advanced motion detection.</p>
+                            <a href="contact.html" class="service-link">Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Laptop Repair -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="assets/img/laptop.gif" alt="Laptop Repair">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                            <i class="fas fa-laptop"></i>
+                            </div>
+                            <h3 class="service-title">Laptop Repair</h3>
+                            <p class="service-description">Expert repair services for all laptop brands, from hardware replacements to software troubleshooting and performance optimization.</p>
+                            <a href="contact.html" class="service-link">Learn More</a>
+                    </div>
+                </div>
+                
+                    <!-- Remote Support - Now positioned in the center of the layout -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="assets/img/support2.gif" alt="Remote Support">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h3 class="service-title">Remote Support</h3>
+                            <p class="service-description">Quick and efficient technical assistance without leaving your home or office, available 24/7 for urgent issues with secure remote connections.</p>
+                            <a href="contact.html" class="service-link">Learn More</a>
+                    </div>
+                </div>
+                
+                    <!-- PC Components & Repair -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="assets/img/pc.gif" alt="PC Components & Repair">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-desktop"></i>
+                            </div>
+                            <h3 class="service-title">PC Components & Repair</h3>
+                            <p class="service-description">Custom PC builds and component upgrades tailored to your specific needs and budget, from gaming rigs to professional workstations.</p>
+                            <a href="contact.html" class="service-link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Details Section -->
+    <section class="services-details">
+        <div class="container">
+            <h2 class="section-title">Service <span>Details</span></h2>
+            
+            <div class="details-wrapper">
+                <!-- CCTV Installation Details -->
+                <div class="detail-card">
+                    <div class="detail-header">
+                        <h3>CCTV Installation</h3>
+                        <div class="toggle-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="detail-content">
+                        <h4>Complete Security Solutions</h4>
+                        <p>Our CCTV installation services provide comprehensive security coverage for residential and commercial properties. We carefully assess your specific requirements to design a customized surveillance system.</p>
+                        
+                        <h4>What's Included:</h4>
+                        <ul>
+                            <li>Free on-site assessment and consultation</li>
+                            <li>HD and 4K camera options with night vision capabilities</li>
+                            <li>Remote viewing setup on your mobile devices</li>
+                            <li>DVR/NVR system installation with appropriate storage</li>
+                            <li>Motion detection and alert configuration</li>
+                            <li>Complete wiring and weatherproofing</li>
+                        </ul>
+                        
+                        <h4>After-Service Support</h4>
+                        <p>All our installations come with a 1-year service warranty and technical support. We also offer maintenance packages to ensure your system remains in optimal condition.</p>
+                    </div>
+                </div>
+                
+                <!-- Laptop Repair Details -->
+                <div class="detail-card">
+                    <div class="detail-header">
+                        <h3>Laptop Repair</h3>
+                        <div class="toggle-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="detail-content">
+                        <h4>Comprehensive Repair Services</h4>
+                        <p>Our certified technicians provide expert repair services for all major laptop brands. With quick turnaround times and affordable rates, we'll get your device back up and running efficiently.</p>
+                        
+                        <h4>Common Issues We Fix:</h4>
+                        <ul>
+                            <li>Screen replacements and repairs</li>
+                            <li>Battery replacement and power issues</li>
+                            <li>Keyboard and touchpad problems</li>
+                            <li>Data recovery and backup solutions</li>
+                            <li>Virus removal and software optimization</li>
+                            <li>Hardware upgrades (RAM, SSD, etc.)</li>
+                        </ul>
+                        
+                        <h4>Our Process</h4>
+                        <p>We begin with a thorough diagnostic assessment, provide a detailed cost estimate before any work begins, and offer a 90-day warranty on all repairs and replacement parts.</p>
+                    </div>
+                </div>
+                
+                <!-- Remote Support Details -->
+                <div class="detail-card">
+                    <div class="detail-header">
+                        <h3>Remote Support</h3>
+                        <div class="toggle-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="detail-content">
+                        <h4>Instant Technical Assistance</h4>
+                        <p>Our remote support service provides immediate technical assistance without the need for on-site visits. Using secure remote access tools, our technicians can diagnose and fix many issues directly.</p>
+                        
+                        <h4>Remote Support Services:</h4>
+                        <ul>
+                            <li>Software troubleshooting and updates</li>
+                            <li>Email and account setup assistance</li>
+                            <li>Operating system optimization</li>
+                            <li>Virus and malware removal</li>
+                            <li>Network configuration and Wi-Fi issues</li>
+                            <li>Printer and peripheral device setup</li>
+                        </ul>
+                        
+                        <h4>Availability</h4>
+                        <p>Our remote support team is available 7 days a week with extended hours. We offer both one-time support sessions and monthly subscription options for businesses.</p>
+                    </div>
+                </div>
+                
+                <!-- PC Components & Repair Details -->
+                <div class="detail-card">
+                    <div class="detail-header">
+                        <h3>PC Components & Repair</h3>
+                        <div class="toggle-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="detail-content">
+                        <h4>Custom PC Solutions</h4>
+                        <p>From gaming rigs to professional workstations, we design and build custom PCs tailored to your specific needs and budget. Our team also handles upgrades and repairs for existing systems.</p>
+                        
+                        <h4>Our PC Services Include:</h4>
+                        <ul>
+                            <li>Custom PC builds with premium components</li>
+                            <li>Hardware upgrades and component replacement</li>
+                            <li>Cooling system optimization</li>
+                            <li>Overclocking and performance tuning</li>
+                            <li>System diagnostics and troubleshooting</li>
+                            <li>Operating system installation and setup</li>
+                        </ul>
+                        
+                        <h4>Quality Assurance</h4>
+                        <p>All our custom builds undergo extensive stress testing and quality checks before delivery. We source components only from authorized dealers and provide warranty support for all parts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

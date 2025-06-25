@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Vision Systems & Solutions</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    
+    <!-- Barba JS -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    
+    <!-- Fix for Barba.js style issues -->
+    <script>
+        // This script ensures styles are properly applied during Barba transitions
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.barba) {
+                // Add hooks to force style recalculation
+                barba.hooks.after((data) => {
+                    // Only run this code when we're on the FAQ page
+                    if (data.next.namespace === 'faq') {
+                        console.log('FAQ page loaded via Barba');
+                        
+                        // Force browser to recalculate styles
+                        document.body.offsetHeight;
+                        
+                        // Ensure we're showing FAQ content
+                        const mainContent = document.querySelector('main[data-barba="container"]');
+                        if (mainContent) {
+                            // Make sure we have the correct namespace
+                            mainContent.setAttribute('data-barba-namespace', 'faq');
+                        }
+                        
+                        // Initialize FAQ toggle if we're on the FAQ page
+                        const faqItems = document.querySelectorAll('.faq-item');
+                        if (faqItems.length > 0) {
+                            setTimeout(() => {
+                                faqItems.forEach(item => {
+                                    const question = item.querySelector('.faq-question');
+                                    if (question) {
+                                        // Remove existing listeners to avoid duplicates
+                                        question.removeEventListener('click', toggleFaq);
+                                        // Add fresh listener
+                                        question.addEventListener('click', toggleFaq);
+                                    }
+                                });
+                            }, 100);
+                        }
+                        
+                        // Check if services content is incorrectly showing
+                        const servicesContent = document.querySelector('.detailed-services');
+                        if (servicesContent) {
+                            console.log('Found services content in FAQ page, removing');
+                            servicesContent.remove();
+                        }
+                        
+                        // Check if trust banner is incorrectly showing
+                        const trustBanner = document.querySelector('.trust-banner');
+                        if (trustBanner) {
+                            console.log('Found trust banner in FAQ page, removing');
+                            trustBanner.remove();
+                        }
+                    }
+                });
+                
+                // Function to toggle FAQ items
+                function toggleFaq(e) {
+                    const item = e.currentTarget.parentNode;
+                    const allItems = document.querySelectorAll('.faq-item');
+                    
+                    // Close all other items
+                    allItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                }
+                
+                // Add a direct page load hook for when refreshing the page
+                if (window.location.pathname.includes('faq.html')) {
+                    setTimeout(() => {
+                        const faqItems = document.querySelectorAll('.faq-item');
+                        if (faqItems.length > 0) {
+                            faqItems.forEach(item => {
+                                const question = item.querySelector('.faq-question');
+                                if (question) {
+                                    question.addEventListener('click', toggleFaq);
+                                }
+                            });
+                        }
+                    }, 100);
+                }
+            }
+        });
+    </script>
+</head>
+<body data-barba="wrapper">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <div class="navbar-left">
+                <div class="navbar-logo">
+                    <div class="logo-text">Vision Systems <span>&</span> Solutions</div>
+                </div>
+            </div>
+            
+            <div class="navbar-right">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="faq.html" class="active">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <button class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main data-barba="container" data-barba-namespace="faq">
+        <!-- FAQ Introduction -->
+        <section class="faq-intro">
+            <div class="container">
+                <h1 class="page-title">Frequently Asked <span>Questions</span></h1>
+                <p class="intro-text">Find answers to common questions about our services. If you can't find what you're looking for, please don't hesitate to contact us directly.</p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="faq-container">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What services does Vision Systems & Solutions provide?</h3>
+                            <div class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-minus"></i>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We offer a wide range of services including computer and laptop repairs, hardware upgrades, CCTV installation and maintenance, as well as onsite, remote, and verbal IT support for individuals and businesses.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you offer home or office visits for repairs and installations?</h3>
+                            <div class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-minus"></i>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we provide onsite services for both homes and offices. Our technicians will visit your location to diagnose and fix the issue or install new systems like CCTV setups.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do I book a service with Vision Systems & Solutions?</h3>
+                            <div class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-minus"></i>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can book a service by calling us directly, messaging us on our official WhatsApp number, or visiting our office. We also offer remote assistance in case you are unable to visit physically.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can you help with software issues as well as hardware problems?</h3>
+                            <div class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-minus"></i>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely. We handle both hardware and software issues, including virus removal, OS installation, driver updates, data recovery, and more.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What areas do you service?</h3>
+                            <div class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-minus"></i>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We provide services throughout the local area and surrounding regions. For remote support, we can assist clients anywhere with an internet connection. Please contact us to confirm if we service your specific location.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 6 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do you offer warranties on repairs and installations?</h3>
+                            <div class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-minus"></i>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we stand behind our work with service warranties. The specific warranty period depends on the type of service provided. All new hardware components come with their manufacturer warranties, and our labor is guaranteed as well.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Button -->
+                <div class="faq-contact">
+                    <p>Still have questions? We're here to help!</p>
+                    <a href="contact.html" class="faq-btn">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

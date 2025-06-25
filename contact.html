@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Vision Systems & Solutions</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    
+    <!-- Barba JS -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    
+    <!-- Custom Contact Page CSS -->
+    <style>
+        /* Contact page styles have been moved to style.css. HTML CSS takes priority if present. */
+    </style>
+</head>
+<body data-barba="wrapper">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <div class="navbar-left">
+                <div class="navbar-logo">
+                    <div class="logo-text">Vision Systems <span>&</span> Solutions</div>
+                </div>
+            </div>
+            
+            <div class="navbar-right">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                
+                <button class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main data-barba="container" data-barba-namespace="contact">
+        <!-- Contact Introduction -->
+        <section class="contact-intro">
+            <div class="container">
+                <h1 class="page-title">Contact <span>Us</span></h1>
+                <p class="intro-text">Have questions or need assistance? Reach out to our friendly team today. We're here to help with all your technical needs.</p>
+            </div>
+        </section>
+        
+        <!-- Office Location Section -->
+        <section class="contact-section office-location">
+            <div class="container">
+                <h2 class="section-title">Our <span>Office Location</span></h2>
+                <div class="location-flex">
+                    <div class="location-map">
+                        <!-- Google Maps Embed -->
+                        <iframe
+                            src="https://www.google.com/maps?q=R.No+11,+Gogri+Nivas,+Hindmata,+Near+St+Paul+High+School,+Dr+B+A+Road,+Dadar+East-400014&output=embed"
+                            width="100%" height="350" style="border:0; border-radius: 16px; box-shadow: 0 8px 32px rgba(44,62,80,0.08);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="location-info">
+                        <h3>Visit Us</h3>
+                        <p><strong>Vision Systems & Solutions</strong></p>
+                        <p>R.No 11, Gogri Nivas, Hindmata,<br>Near St Paul High School,<br>Dr B A Road, Dadar East-400014</p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+919892761969">9892761969</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:viivek4uin@gmail.com">viivek4uin@gmail.com</a></p>
+                        <div class="button-group">
+                            <a href="https://maps.google.com/?q=R.No+11,+Gogri+Nivas,+Hindmata,+Near+St+Paul+High+School,+Dr+B+A+Road,+Dadar+East-400014" target="_blank" class="btn-primary">Open in Google Maps</a>
+                            <a href="https://wa.me/919892761969?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" class="btn-primary whatsapp-btn"><i class="fab fa-whatsapp"></i> Message on WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Content will be added later -->
+    </main>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    
+    <!-- Contact Page Animation JS -->
+    <!-- (Moved to main.js) -->
+</body>
+</html>

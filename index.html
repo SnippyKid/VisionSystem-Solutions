@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Systems & Solutions</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    
+    <!-- Barba JS -->
+    <script src="https://unpkg.com/@barba/core"></script>
+</head>
+<body data-barba="wrapper">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <div class="navbar-left">
+                <div class="navbar-logo">
+                    <div class="logo-text">Vision Systems <span>&</span> Solutions</div>
+                </div>
+            </div>
+            
+            <div class="navbar-right">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <button class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main data-barba="container" data-barba-namespace="home">
+        <!-- Hero Section -->
+        <section class="hero">
+            <!-- Tech SVG Animations -->
+            <div class="svg-container">
+                <!-- Tech Grid -->
+                <div class="tech-grid"></div>
+                
+                <!-- Tech Circles -->
+                <div class="tech-circle tech-circle-1"></div>
+                <div class="tech-circle tech-circle-2"></div>
+                <div class="tech-circle tech-circle-3"></div>
+                
+                <!-- Tech Lines -->
+                <div class="tech-line tech-line-1"></div>
+                <div class="tech-line tech-line-2"></div>
+                <div class="tech-line tech-line-3"></div>
+                <div class="tech-line tech-line-4"></div>
+                
+                <!-- Tech Dots -->
+                <div class="tech-dot tech-dot-1"></div>
+                <div class="tech-dot tech-dot-2"></div>
+                <div class="tech-dot tech-dot-3"></div>
+                <div class="tech-dot tech-dot-4"></div>
+                <div class="tech-dot tech-dot-5"></div>
+                
+                <!-- Circuit Paths and Nodes -->
+                <div class="circuit-path circuit-path-1"></div>
+                <div class="circuit-node circuit-node-1"></div>
+                
+                <div class="circuit-path circuit-path-2"></div>
+                <div class="circuit-node circuit-node-2"></div>
+                
+                <div class="circuit-path circuit-path-3"></div>
+                <div class="circuit-node circuit-node-3"></div>
+            </div>
+            
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to <span>Vision Systems & Solutions</span></h1>
+                <p class="hero-tagline">Transforming ideas into innovative technological solutions</p>
+                <a href="about.html" class="hero-btn">Discover More</a>
+            </div>
+        </section>
+        
+        <!-- Featured Services Section -->
+        <section class="featured-services">
+            <div class="container">
+                <div class="section-header">
+                    <h5 class="section-subtitle">What We Do</h5>
+                    <h2 class="section-title">Our <span>Featured Services</span></h2>
+                    <p class="section-description">We offer a comprehensive range of technical services tailored to meet the evolving needs of our clients. From IT support to security solutions, our expert team is ready to help.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Service Item 1 -->
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h3 class="service-title">IT Support</h3>
+                        <p class="service-description">Professional IT support for businesses and individuals. Our experts are ready to solve your technical challenges quickly and effectively.</p>
+                        <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Service Item 2 -->
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3 class="service-title">CCTV Installation</h3>
+                        <p class="service-description">Secure your home or business with our professional CCTV installation services. Advanced systems with remote monitoring capabilities.</p>
+                        <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Service Item 3 -->
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3 class="service-title">Computer Repair</h3>
+                        <p class="service-description">Fast and reliable computer repair services for all brands and models. Hardware and software solutions to get you back up and running.</p>
+                        <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <!-- Circle Graphics -->
+            <div class="circle-graphic circle-1"></div>
+            <div class="circle-graphic circle-2"></div>
+            
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Elevate Your <span>Technology</span>?</h2>
+                    <p class="cta-description">Contact our expert team today to discuss your requirements and discover how our IT services can help improve your business efficiency and security.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="cta-btn cta-btn-primary">Get Started <i class="fas fa-arrow-right"></i></a>
+                        <a href="services.html" class="cta-btn cta-btn-secondary">Explore Services <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
