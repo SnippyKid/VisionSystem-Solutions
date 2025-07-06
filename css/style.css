@@ -2684,3 +2684,11 @@ main {
     background-clip: initial;
     animation: none;
 }
+
+@media (max-width: 768px) {
+    [data-barba-namespace="home"] .cta-content {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+}
