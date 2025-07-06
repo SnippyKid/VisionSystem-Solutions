@@ -2675,3 +2675,12 @@ main {
         justify-content: center;
     }
 }
+
+.logo-and {
+    color: var(--rgb-color-2);
+    font-weight: 700;
+    background: none;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    animation: none;
+}
